@@ -34,16 +34,6 @@ jobs:
       - name: Install dependencies
         run: uv sync --python 3.13
 
-      - name: Debug - Mkdocs Environment
-        run: |
-          uv pip show mkdocs-revealjs
-          uv run python -c "import mkdocs_revealjs; print(mkdocs_revealjs.__file__)"
-          uv run mkdocs --version
-
-      - name: Debug - Check revealjs plugin source
-        run: |
-          cat /home/runner/work/cop4331c/cop4331c/.venv/lib/python3.13/site-packages/mkdocs_revealjs/plugin.py
-
       - name: Build and deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
