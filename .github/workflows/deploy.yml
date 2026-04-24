@@ -1,0 +1,50 @@
+name: Deploy on Push
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "docs/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Full history needed for git-revision-date plugin
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+        with:
+          enable-cache: true
+          cache-dependency-glob: "uv.lock"
+
+      - name: Install Python 3.13
+        run: uv python install 3.13
+
+      - name: Install dependencies
+        run: uv sync --python 3.13
+
+      - name: Debug - Mkdocs Environment
+        run: |
+          uv pip show mkdocs-revealjs
+          uv run python -c "import mkdocs_revealjs; print(mkdocs_revealjs.__file__)"
+          uv run mkdocs --version
+
+      - name: Debug - Check revealjs plugin source
+        run: |
+          cat /home/runner/work/cop4331c/cop4331c/.venv/lib/python3.13/site-packages/mkdocs_revealjs/plugin.py
+
+      - name: Build and deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+        run: uv run mkdocs gh-deploy --force
