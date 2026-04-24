@@ -112,9 +112,6 @@ plugins:
       tags_file: tags.md
   - callouts
   - glightbox
-  - revealjs:
-      transition: slide
-      controls: true
 hooks:
   - overrides/hooks/on_page_markdown.py
   - overrides/hooks/on_env.py
