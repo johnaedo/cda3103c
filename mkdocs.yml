@@ -5,7 +5,7 @@ site_author: Dr. John Aedo
 
 theme:
     name: 'material'
-    logo: _assets/meta/logo.png
+    logo: _assets/meta/logo.svg
     favicon: _assets/meta/favicons.svg
     custom_dir: overrides
     font:
