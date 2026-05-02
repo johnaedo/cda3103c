@@ -1,0 +1,25 @@
+<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <rect width="80" height="80" rx="14" fill="#1a1a1a"/>
+  <path d="M18 14 L34 14 Q46 14 46 25 Q46 36 34 36 L18 36 Z" fill="#1a1a1a" stroke="#FFC904" stroke-width="1.5"/>
+  <text x="25" y="29" font-family="monospace" font-size="7" fill="#FFC904" font-weight="700">&amp;</text>
+  <line x1="8" y1="19" x2="18" y2="19" stroke="#FFC904" stroke-width="1.5"/>
+  <line x1="8" y1="31" x2="18" y2="31" stroke="#FFC904" stroke-width="1.5"/>
+  <line x1="46" y1="25" x2="56" y2="25" stroke="#FFC904" stroke-width="1.5"/>
+  <path d="M18 44 Q24 56 18 68 L32 68 Q46 68 52 56 Q46 44 32 44 Z" fill="#1a1a1a" stroke="#FFC904" stroke-width="1.5"/>
+  <text x="32" y="60" font-family="monospace" font-size="9" fill="#FFC904" font-weight="700" text-anchor="middle">|</text>
+  <line x1="8" y1="50" x2="20" y2="50" stroke="#FFC904" stroke-width="1.5"/>
+  <line x1="8" y1="62" x2="20" y2="62" stroke="#FFC904" stroke-width="1.5"/>
+  <line x1="52" y1="56" x2="62" y2="56" stroke="#FFC904" stroke-width="1.5"/>
+  <circle cx="8" cy="19" r="2" fill="#FFC904"/>
+  <circle cx="8" cy="31" r="2" fill="#FFC904"/>
+  <circle cx="8" cy="50" r="2" fill="#FFC904"/>
+  <circle cx="8" cy="62" r="2" fill="#FFC904"/>
+  <circle cx="56" cy="25" r="2" fill="#FFC904"/>
+  <circle cx="62" cy="56" r="2" fill="#FFC904"/>
+  <line x1="56" y1="25" x2="56" y2="40" stroke="#FFC904" stroke-width="1.5"/>
+  <line x1="62" y1="56" x2="62" y2="42" stroke="#FFC904" stroke-width="1.5"/>
+  <line x1="56" y1="40" x2="72" y2="40" stroke="#FFC904" stroke-width="1.5"/>
+  <line x1="62" y1="42" x2="72" y2="42" stroke="#FFC904" stroke-width="1.5"/>
+  <circle cx="56" cy="40" r="2" fill="#FFC904"/>
+  <circle cx="62" cy="42" r="2" fill="#FFC904"/>
+</svg>
