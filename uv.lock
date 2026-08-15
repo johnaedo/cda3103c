@@ -643,16 +643,16 @@ wheels = [
 
 [[package]]
 name = "mkdocs-revealjs"
-version = "0.11.0"
+version = "0.11.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "markdown" },
     { name = "mkdocs" },
     { name = "pyyaml" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/67/d7/e2adbf3575379579a10af6858f7ac08302f81f4ebe7c35dee328e01f9b26/mkdocs_revealjs-0.11.0.tar.gz", hash = "sha256:9117aca556d265698784db2f87879fb5cce84a6550c98bcd508666333d4e43fd", size = 66739, upload-time = "2026-08-14T00:22:45.672Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/5d/0a/9aa444fec26ebe61d0bc03dfb970cebefb775a8ad359e3870b8144198a93/mkdocs_revealjs-0.11.2.tar.gz", hash = "sha256:8b3f175754a0fff7b5906e2e4bd01bcefebc576d92418da3d4045d87aaf877c7", size = 66772, upload-time = "2026-08-14T15:41:56.698Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/3b/24/10e8bf786b31d676b4f684ec66ab130c31d470f580b860b9a0eebf60cbe7/mkdocs_revealjs-0.11.0-py3-none-any.whl", hash = "sha256:52e41d402f4441787fd9d6c48a277b38dc2aad501088fa3f6380324561dd4401", size = 55421, upload-time = "2026-08-14T00:22:44.565Z" },
+    { url = "https://files.pythonhosted.org/packages/29/6a/62f645234d4ddac997357bd7de99815a20069c6fa99e7de0d2a3c39c49e8/mkdocs_revealjs-0.11.2-py3-none-any.whl", hash = "sha256:23c846ade9f9aa947622a905a243166d6661f2b2e0cb12dbb31bdddc0ab1e3c3", size = 55421, upload-time = "2026-08-14T15:41:55.467Z" },
 ]
 
 [[package]]
@@ -1074,12 +1074,12 @@ wheels = [
 
 [[package]]
 name = "wcmatch"
-version = "11.0"
+version = "11.0.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "bracex" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/16/25/1da725838132221e33568973da484ff43813662ccc06ebf7f6e3abddfcd5/wcmatch-11.0.tar.gz", hash = "sha256:55d95c2447789712774b198ceec72939e88b5618f1f8f0a9b605bf7740b63b96", size = 141360, upload-time = "2026-07-10T05:50:24.183Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/57/43/30e407989e313677dbb9d5f045f966549a7254834571e342eaa4b55cc67b/wcmatch-11.0.1.tar.gz", hash = "sha256:1ea2b4fa678b8ca268253798d5963935df39132d47c3e241c0a0732224005e7d", size = 144662, upload-time = "2026-08-14T15:20:40.477Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/28/12/f38b6fee116274d7221743caab07d765032e1370bb54cad8714f87aeb0e8/wcmatch-11.0-py3-none-any.whl", hash = "sha256:3a5977ace27e075eef67eb03d539563f1a19018b62881949a42932cf66926934", size = 42914, upload-time = "2026-07-10T05:50:22.995Z" },
+    { url = "https://files.pythonhosted.org/packages/ce/77/7a02b0f05b3ffcdbef9719ce3ee0b508d6a29b58e95299f1580055671db3/wcmatch-11.0.1-py3-none-any.whl", hash = "sha256:fd149ecddb9f0a88ea780017d6dde17c994e494e7f7303d4e3c9d6251f978f4b", size = 43449, upload-time = "2026-08-14T15:20:39.379Z" },
 ]
