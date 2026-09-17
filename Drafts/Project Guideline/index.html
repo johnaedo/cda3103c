@@ -4,12 +4,11 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Course notes, code demos, and tutorials" name="description"/>
 <meta content="Dr. John Aedo" name="author"/>
-<link href="https://johnaedo.github.io/cda3103c/Resources/CDA%203103C%20Resources/" rel="canonical"/>
-<link href="../CDA%203103C%20FAQ/" rel="prev"/>
-<link href="../../Supplementary%20Material/Control%20Signals%20Made%20Easy/" rel="next"/>
+<link href="https://johnaedo.github.io/cda3103c/Drafts/Project%20Guideline/" rel="canonical"/>
+<link href="../../Examples/Switch%20statement%20in%20assembly%20using%20Jump%20Table/" rel="next"/>
 <link href="../../_assets/meta/favicons.svg" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.7.7" name="generator"/>
-<title>CDA 3103C Resources - CDA 3103C - Computer Logic and Organization</title>
+<title>Project Guideline - CDA 3103C - Computer Logic and Organization</title>
 <link href="../../assets/stylesheets/main.ec1eaa64.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -30,11 +29,11 @@
 <meta content="https://johnaedo.github.io/cda3103c/_assets/meta/logo.svg" property="og:image"/>
 <meta content="https://johnaedo.github.io/cda3103c/_assets/meta/logo.svg" name="twitter:image"/>
 <meta content="https://johnaedo.github.io/cda3103c/" name="site_url"/>
-<meta content="CDA 3103C Resources" property="og:title"/>
-<meta content="CDA 3103C Resources" name="twitter:title"/>
+<meta content="Project Guideline" property="og:title"/>
+<meta content="Project Guideline" name="twitter:title"/>
 <meta content="Course notes, code demos, and tutorials" name="og:description"/>
 <meta content="Course notes, code demos, and tutorials" name="twitter:description"/>
-<script> document.title = "CDA 3103C Resources" </script>
+<script> document.title = "Project Guideline" </script>
 <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
@@ -75,7 +74,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              CDA 3103C Resources
+              Project Guideline
             
           </span>
 </div>
@@ -127,8 +126,8 @@
 <nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
 <div class="md-grid">
 <ul class="md-tabs__list">
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../Drafts/Project%20Guideline/">
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="./">
 <svg height="18" viewbox="0 0 20 20" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M3 5.5v6.604l1.5-2.6a3 3 0 0 1 2.599-1.5H15V7.5A1.5 1.5 0 0 0 13.5 6h-4a.5.5 0 0 1-.353-.146L7.44 4.146A.5.5 0 0 0 7.086 4H4.5A1.5 1.5 0 0 0 3 5.5m1.284 10.485q.106.015.22.015H13.9a2 2 0 0 0 1.732-1l2.163-3.745a1.5 1.5 0 0 0-1.3-2.25H7.1a2 2 0 0 0-1.732 1L3.205 13.75a1.5 1.5 0 0 0 1.079 2.235M2 14.46V5.5A2.5 2.5 0 0 1 4.5 3h2.586a1.5 1.5 0 0 1 1.06.44L9.708 5H13.5A2.5 2.5 0 0 1 16 7.5v.505h.496c1.925 0 3.128 2.083 2.166 3.75L16.499 15.5a3 3 0 0 1-2.598 1.5h-9.4q-.095 0-.186-.007a2.46 2.46 0 0 1-1.438-.592A2.5 2.5 0 0 1 2 14.461" fill="currentColor"></path></svg>
     
   
@@ -145,8 +144,8 @@
 
         </a>
 </li>
-<li class="md-tabs__item md-tabs__item--active">
-<a class="md-tabs__link" href="../CDA%203103C%20FAQ/">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../Resources/CDA%203103C%20FAQ/">
 <svg height="18" viewbox="0 0 20 20" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M3 5.5v6.604l1.5-2.6a3 3 0 0 1 2.599-1.5H15V7.5A1.5 1.5 0 0 0 13.5 6h-4a.5.5 0 0 1-.353-.146L7.44 4.146A.5.5 0 0 0 7.086 4H4.5A1.5 1.5 0 0 0 3 5.5m1.284 10.485q.106.015.22.015H13.9a2 2 0 0 0 1.732-1l2.163-3.745a1.5 1.5 0 0 0-1.3-2.25H7.1a2 2 0 0 0-1.732 1L3.205 13.75a1.5 1.5 0 0 0 1.079 2.235M2 14.46V5.5A2.5 2.5 0 0 1 4.5 3h2.586a1.5 1.5 0 0 1 1.06.44L9.708 5H13.5A2.5 2.5 0 0 1 16 7.5v.505h.496c1.925 0 3.128 2.083 2.166 3.75L16.499 15.5a3 3 0 0 1-2.598 1.5h-9.4q-.095 0-.186-.007a2.46 2.46 0 0 1-1.438-.592A2.5 2.5 0 0 1 2 14.461" fill="currentColor"></path></svg>
     
   
@@ -199,28 +198,191 @@
     CDA 3103C - Computer Logic and Organization
   </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_1" type="checkbox"/>
-<label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
 <svg height="18" viewbox="0 0 20 20" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M3 5.5v6.604l1.5-2.6a3 3 0 0 1 2.599-1.5H15V7.5A1.5 1.5 0 0 0 13.5 6h-4a.5.5 0 0 1-.353-.146L7.44 4.146A.5.5 0 0 0 7.086 4H4.5A1.5 1.5 0 0 0 3 5.5m1.284 10.485q.106.015.22.015H13.9a2 2 0 0 0 1.732-1l2.163-3.745a1.5 1.5 0 0 0-1.3-2.25H7.1a2 2 0 0 0-1.732 1L3.205 13.75a1.5 1.5 0 0 0 1.079 2.235M2 14.46V5.5A2.5 2.5 0 0 1 4.5 3h2.586a1.5 1.5 0 0 1 1.06.44L9.708 5H13.5A2.5 2.5 0 0 1 16 7.5v.505h.496c1.925 0 3.128 2.083 2.166 3.75L16.499 15.5a3 3 0 0 1-2.598 1.5h-9.4q-.095 0-.186-.007a2.46 2.46 0 0 1-1.438-.592A2.5 2.5 0 0 1 2 14.461" fill="currentColor"></path></svg>
 <span class="md-ellipsis">
     Drafts
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_1_label" class="md-nav" data-md-level="1">
+<nav aria-expanded="true" aria-labelledby="__nav_1_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_1">
 <span class="md-nav__icon md-icon"></span>
             Drafts
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../Drafts/Project%20Guideline/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<svg fill="currentColor" height="16px" viewbox="0 0 24 24" width="16px" xmlns="http://www.w3.org/2000/svg"><path d="M19.903 8.586a.997.997 0 0 0-.196-.293l-6-6a.997.997 0 0 0-.293-.196c-.03-.014-.062-.022-.094-.033a.991.991 0 0 0-.259-.051C13.04 2.011 13.021 2 13 2H6c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-.021-.011-.04-.013-.062a.952.952 0 0 0-.051-.259c-.01-.032-.019-.063-.033-.093zM16.586 8H14V5.414L16.586 8zM6 20V4h6v5a1 1 0 0 0 1 1h5l.002 10H6z"></path><path d="M8 12h8v2H8zm0 4h8v2H8zm0-8h2v2H8z"></path></svg>
+<span class="md-ellipsis">
+    Project Guideline
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
 <svg fill="currentColor" height="16px" viewbox="0 0 24 24" width="16px" xmlns="http://www.w3.org/2000/svg"><path d="M19.903 8.586a.997.997 0 0 0-.196-.293l-6-6a.997.997 0 0 0-.293-.196c-.03-.014-.062-.022-.094-.033a.991.991 0 0 0-.259-.051C13.04 2.011 13.021 2 13 2H6c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-.021-.011-.04-.013-.062a.952.952 0 0 0-.051-.259c-.01-.032-.019-.063-.033-.093zM16.586 8H14V5.414L16.586 8zM6 20V4h6v5a1 1 0 0 0 1 1h5l.002 10H6z"></path><path d="M8 12h8v2H8zm0 4h8v2H8zm0-8h2v2H8z"></path></svg>
 <span class="md-ellipsis">
     Project Guideline
   </span>
 </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cda3103-computer-logic-and-organization">
+<span class="md-ellipsis">
+      
+        CDA3103 - Computer Logic and Organization
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#project-description">
+<span class="md-ellipsis">
+      
+        Project Description
+      
+    </span>
+</a>
+<nav aria-label="Project Description" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-introduction">
+<span class="md-ellipsis">
+      
+        1. Introduction
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-specification-of-the-simulator">
+<span class="md-ellipsis">
+      
+        2. Specification of the simulator
+      
+    </span>
+</a>
+<nav aria-label="2. Specification of the simulator" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#21-instructions-to-be-simulated">
+<span class="md-ellipsis">
+      
+        2.1 Instructions to be simulated
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#22-registers-to-be-handled">
+<span class="md-ellipsis">
+      
+        2.2 Registers to be handled
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#23-memory-usage">
+<span class="md-ellipsis">
+      
+        2.3 Memory usage
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#24-conditions-that-the-myspim-should-halt">
+<span class="md-ellipsis">
+      
+        2.4 Conditions that the MySPIM should halt
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#25-format-of-the-input-machine-code-file">
+<span class="md-ellipsis">
+      
+        2.5 Format of the input machine code file
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#26-note-on-branch-addressing">
+<span class="md-ellipsis">
+      
+        2.6 Note on branch addressing
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-resources">
+<span class="md-ellipsis">
+      
+        3. Resources
+      
+    </span>
+</a>
+<nav aria-label="3. Resources" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#31-files-provided">
+<span class="md-ellipsis">
+      
+        3.1 Files provided
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4-the-functions-to-be-filled-in">
+<span class="md-ellipsis">
+      
+        4. The functions to be filled in
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#5-operation-of-the-simulator">
+<span class="md-ellipsis">
+      
+        5. Operation of the Simulator
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#6-submission-guidelines">
+<span class="md-ellipsis">
+      
+        6. Submission Guidelines
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -251,128 +413,36 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
 <svg height="18" viewbox="0 0 20 20" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M3 5.5v6.604l1.5-2.6a3 3 0 0 1 2.599-1.5H15V7.5A1.5 1.5 0 0 0 13.5 6h-4a.5.5 0 0 1-.353-.146L7.44 4.146A.5.5 0 0 0 7.086 4H4.5A1.5 1.5 0 0 0 3 5.5m1.284 10.485q.106.015.22.015H13.9a2 2 0 0 0 1.732-1l2.163-3.745a1.5 1.5 0 0 0-1.3-2.25H7.1a2 2 0 0 0-1.732 1L3.205 13.75a1.5 1.5 0 0 0 1.079 2.235M2 14.46V5.5A2.5 2.5 0 0 1 4.5 3h2.586a1.5 1.5 0 0 1 1.06.44L9.708 5H13.5A2.5 2.5 0 0 1 16 7.5v.505h.496c1.925 0 3.128 2.083 2.166 3.75L16.499 15.5a3 3 0 0 1-2.598 1.5h-9.4q-.095 0-.186-.007a2.46 2.46 0 0 1-1.438-.592A2.5 2.5 0 0 1 2 14.461" fill="currentColor"></path></svg>
 <span class="md-ellipsis">
     Resources
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="true" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_3">
 <span class="md-nav__icon md-icon"></span>
             Resources
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../CDA%203103C%20FAQ/">
+<a class="md-nav__link" href="../../Resources/CDA%203103C%20FAQ/">
 <svg fill="currentColor" height="16px" viewbox="0 0 24 24" width="16px" xmlns="http://www.w3.org/2000/svg"><path d="M19.903 8.586a.997.997 0 0 0-.196-.293l-6-6a.997.997 0 0 0-.293-.196c-.03-.014-.062-.022-.094-.033a.991.991 0 0 0-.259-.051C13.04 2.011 13.021 2 13 2H6c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-.021-.011-.04-.013-.062a.952.952 0 0 0-.051-.259c-.01-.032-.019-.063-.033-.093zM16.586 8H14V5.414L16.586 8zM6 20V4h6v5a1 1 0 0 0 1 1h5l.002 10H6z"></path><path d="M8 12h8v2H8zm0 4h8v2H8zm0-8h2v2H8z"></path></svg>
 <span class="md-ellipsis">
     CDA 3103C FAQ
   </span>
 </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-<svg fill="currentColor" height="16px" viewbox="0 0 24 24" width="16px" xmlns="http://www.w3.org/2000/svg"><path d="M19.903 8.586a.997.997 0 0 0-.196-.293l-6-6a.997.997 0 0 0-.293-.196c-.03-.014-.062-.022-.094-.033a.991.991 0 0 0-.259-.051C13.04 2.011 13.021 2 13 2H6c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-.021-.011-.04-.013-.062a.952.952 0 0 0-.051-.259c-.01-.032-.019-.063-.033-.093zM16.586 8H14V5.414L16.586 8zM6 20V4h6v5a1 1 0 0 0 1 1h5l.002 10H6z"></path><path d="M8 12h8v2H8zm0 4h8v2H8zm0-8h2v2H8z"></path></svg>
-<span class="md-ellipsis">
-    CDA 3103C Resources
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Resources/CDA%203103C%20Resources/">
 <svg fill="currentColor" height="16px" viewbox="0 0 24 24" width="16px" xmlns="http://www.w3.org/2000/svg"><path d="M19.903 8.586a.997.997 0 0 0-.196-.293l-6-6a.997.997 0 0 0-.293-.196c-.03-.014-.062-.022-.094-.033a.991.991 0 0 0-.259-.051C13.04 2.011 13.021 2 13 2H6c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-.021-.011-.04-.013-.062a.952.952 0 0 0-.051-.259c-.01-.032-.019-.063-.033-.093zM16.586 8H14V5.414L16.586 8zM6 20V4h6v5a1 1 0 0 0 1 1h5l.002 10H6z"></path><path d="M8 12h8v2H8zm0 4h8v2H8zm0-8h2v2H8z"></path></svg>
 <span class="md-ellipsis">
     CDA 3103C Resources
   </span>
 </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#resources">
-<span class="md-ellipsis">
-      
-        Resources
-      
-    </span>
-</a>
-<nav aria-label="Resources" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#how-to-use-this">
-<span class="md-ellipsis">
-      
-        How to Use This
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#general-class-resources">
-<span class="md-ellipsis">
-      
-        General Class Resources
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#module-1-binary-conversions-addition-and-subtraction">
-<span class="md-ellipsis">
-      
-        Module 1: Binary Conversions, Addition, and Subtraction
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#module-2-combinational-logic">
-<span class="md-ellipsis">
-      
-        Module 2: Combinational Logic
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#module-3-sequential-logic-design">
-<span class="md-ellipsis">
-      
-        Module 3: Sequential Logic Design
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#module-4-computer-arithmetic">
-<span class="md-ellipsis">
-      
-        Module 4: Computer Arithmetic
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#module-5-mips-assembly">
-<span class="md-ellipsis">
-      
-        Module 5: MIPS Assembly
-      
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
 </li>
 </ul>
 </nav>
@@ -490,74 +560,145 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#resources">
+<a class="md-nav__link" href="#cda3103-computer-logic-and-organization">
 <span class="md-ellipsis">
       
-        Resources
+        CDA3103 - Computer Logic and Organization
       
     </span>
 </a>
-<nav aria-label="Resources" class="md-nav">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#project-description">
+<span class="md-ellipsis">
+      
+        Project Description
+      
+    </span>
+</a>
+<nav aria-label="Project Description" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#how-to-use-this">
+<a class="md-nav__link" href="#1-introduction">
 <span class="md-ellipsis">
       
-        How to Use This
+        1. Introduction
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#general-class-resources">
+<a class="md-nav__link" href="#2-specification-of-the-simulator">
 <span class="md-ellipsis">
       
-        General Class Resources
+        2. Specification of the simulator
+      
+    </span>
+</a>
+<nav aria-label="2. Specification of the simulator" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#21-instructions-to-be-simulated">
+<span class="md-ellipsis">
+      
+        2.1 Instructions to be simulated
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#module-1-binary-conversions-addition-and-subtraction">
+<a class="md-nav__link" href="#22-registers-to-be-handled">
 <span class="md-ellipsis">
       
-        Module 1: Binary Conversions, Addition, and Subtraction
+        2.2 Registers to be handled
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#module-2-combinational-logic">
+<a class="md-nav__link" href="#23-memory-usage">
 <span class="md-ellipsis">
       
-        Module 2: Combinational Logic
+        2.3 Memory usage
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#module-3-sequential-logic-design">
+<a class="md-nav__link" href="#24-conditions-that-the-myspim-should-halt">
 <span class="md-ellipsis">
       
-        Module 3: Sequential Logic Design
+        2.4 Conditions that the MySPIM should halt
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#module-4-computer-arithmetic">
+<a class="md-nav__link" href="#25-format-of-the-input-machine-code-file">
 <span class="md-ellipsis">
       
-        Module 4: Computer Arithmetic
+        2.5 Format of the input machine code file
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#module-5-mips-assembly">
+<a class="md-nav__link" href="#26-note-on-branch-addressing">
 <span class="md-ellipsis">
       
-        Module 5: MIPS Assembly
+        2.6 Note on branch addressing
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-resources">
+<span class="md-ellipsis">
+      
+        3. Resources
+      
+    </span>
+</a>
+<nav aria-label="3. Resources" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#31-files-provided">
+<span class="md-ellipsis">
+      
+        3.1 Files provided
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4-the-functions-to-be-filled-in">
+<span class="md-ellipsis">
+      
+        4. The functions to be filled in
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#5-operation-of-the-simulator">
+<span class="md-ellipsis">
+      
+        5. Operation of the Simulator
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#6-submission-guidelines">
+<span class="md-ellipsis">
+      
+        6. Submission Guidelines
       
     </span>
 </a>
@@ -599,68 +740,356 @@
   Hack: check whether the content contains a h1 headline. If it doesn't, the
   page title (or respectively site name) is used as the main headline.
 -->
-<h1>CDA 3103C Resources</h1>
+<h1>Project Guideline</h1>
 <!-- Page content -->
-<h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">¶</a></h2>
-<p>This is a list of helpful resources for learning CDA 3103C content, contributed to by many students and Professor Aedo, compiled by sh0inx.</p>
-<h3 id="how-to-use-this">How to Use This<a class="headerlink" href="#how-to-use-this" title="Permanent link">¶</a></h3>
-<p>Generally speaking, you want to use these as <strong>supplemental</strong> resources to the textbook and class notes. While the textbook is not <em>required</em>, it is <em>optional</em>, and provides much of the background and context in which the class is taught.</p>
-<p>Get a good night’s rest, hit the books when you’re ready. If you’re unsure how you want to study, <a href="https://learningcenter.unc.edu/tips-and-tools/studying-101-study-smarter-not-harder/">here are some helpful tips</a>, but most importantly, do what works for you and doesn’t make you hate the material.</p>
-<h3 id="general-class-resources">General Class Resources<a class="headerlink" href="#general-class-resources" title="Permanent link">¶</a></h3>
-<p><strong>Textbook</strong></p>
+<h2 id="cda3103-computer-logic-and-organization">CDA3103 - Computer Logic and Organization<a class="headerlink" href="#cda3103-computer-logic-and-organization" title="Permanent link">¶</a></h2>
+<h2 id="project-description">Project Description<a class="headerlink" href="#project-description" title="Permanent link">¶</a></h2>
+<h3 id="1-introduction">1. Introduction<a class="headerlink" href="#1-introduction" title="Permanent link">¶</a></h3>
+<p>In this project, you are asked to write the core part of a mini processor simulator called MySPIM using the C programming language on a Unix platform. Your MySPIM will demonstrate functions of the MIPS processor as well as the principle actions of the datapath and the control signals of a MIPS processor. The simulator should read in a file containing MIPS machine codes (in the format specified below) and simulate what the MIPS processor does cycle-by-cycle. You are required to implement the processor simulation as a single-cycle datapath. You are asked to fill in the body of several functions in the provided project file.</p>
+<h3 id="2-specification-of-the-simulator">2. Specification of the simulator<a class="headerlink" href="#2-specification-of-the-simulator" title="Permanent link">¶</a></h3>
+<h4 id="21-instructions-to-be-simulated">2.1 Instructions to be simulated<a class="headerlink" href="#21-instructions-to-be-simulated" title="Permanent link">¶</a></h4>
+<p>The 14 instructions listed in Appendix A, Figure 1 are to be simulated. Please refer to the tables in the MIPS Reference PowerPoint in Module 5 for the machine codes of these instructions.</p>
+<blockquote>
+<p>Note: you are NOT required to treat situations leading to exceptions, interrupts, or changes in the status register.</p>
+</blockquote>
+<h4 id="22-registers-to-be-handled">2.2 Registers to be handled<a class="headerlink" href="#22-registers-to-be-handled" title="Permanent link">¶</a></h4>
+<p>MySPIM should handle the 32 general purpose registers</p>
+<h4 id="23-memory-usage">2.3 Memory usage<a class="headerlink" href="#23-memory-usage" title="Permanent link">¶</a></h4>
 <ul>
-<li><a href="https://www.amazon.com/Computer-Organization-Design-MIPS-Architecture/dp/0128201096">Computer Organization and Design MIPS Edition: The Hardware/Software Interface</a> by David A. Patterson and John L. Hennessy</li>
+<li>The size of memory of MySPIM is 64kB (Addresses 0x0000 to 0xFFFF).</li>
+<li>The system assumes that all programs start at memory location 0x4000.</li>
+<li>All instructions are word-aligned in the memory, i.e., the addresses of all instructions are a multiple of 4.</li>
+<li>The simulator (and the MIPS processor itself) treats the memory as one segment. (THe division of memory into text, data, and stack segments is only done by the compiler/assembler.)</li>
+<li>At the start of the program, all memory locations are initialized to zero, except those specified in the “.asc” file, as shown in the provided codes.</li>
+<li>The memory is in <em>big-endian</em> byte order.</li>
+<li>The memory is in the following format: e.g. Store a 32-bit number 0x<em>aabbccdd</em> in memory address 0x0 - 0x3</li>
 </ul>
-<p><strong>External Classes’ Resources</strong></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Mem[0]</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Address</td>
+<td>0x0</td>
+<td>0x1</td>
+<td>0x2</td>
+<td>0x3</td>
+</tr>
+<tr>
+<td>Content</td>
+<td>aa</td>
+<td>bb</td>
+<td>cc</td>
+<td>dd</td>
+</tr>
+</tbody>
+</table>
+<h4 id="24-conditions-that-the-myspim-should-halt">2.4 Conditions that the MySPIM should halt<a class="headerlink" href="#24-conditions-that-the-myspim-should-halt" title="Permanent link">¶</a></h4>
+<p>If one of the following situations is encountered, the global flag Halt is set to 1, and hence the simulation halts.</p>
 <ul>
-<li><a href="https://www.comp.nus.edu.sg/~adi-yoga/CS2100/">National University of Singapore: Adi Yoga’s CS2100</a></li>
+<li>An illegal instruction is encountered.</li>
+<li>Jumping to an address that is not word-aligned (being multiple of 4).</li>
+<li>The address of lw or sw is not word-aligned.</li>
+<li>Accessing data or jumping to an address that is beyond the memory.</li>
 </ul>
-<p><strong>Concepts</strong></p>
+<blockquote>
+<p>Note: The instructions beyond the list of instructions in Appendix A, Figure 1 are illegal.</p>
+</blockquote>
+<h4 id="25-format-of-the-input-machine-code-file">2.5 Format of the input machine code file<a class="headerlink" href="#25-format-of-the-input-machine-code-file" title="Permanent link">¶</a></h4>
+<p>MySPIM takes hexadecimal formatted machine codes, with filename <em>xxx.asc</em>, as input. An example of <em>.asc</em> file is shown below. Text after “<em>#</em>” on any line is treated as comments.</p>
+<div>
+20010000   # addi $1, $0, 0<br/>
+200200c8   # addi $2, $0, 200<br/>
+10220003   # beq $1, $2, 3<br/>
+00000020   # delay slot<br/>
+20210001   # addi $1, $1, 1<br/>
+00000020   # no operation<br/>
+</div>
+<p>The simulation ends when an illegal instruction, such as 0x00000000, is encountered.</p>
+<h4 id="26-note-on-branch-addressing">2.6 Note on branch addressing<a class="headerlink" href="#26-note-on-branch-addressing" title="Permanent link">¶</a></h4>
+<p>The branch offset in MIPS, and hence in <em>MySPIM</em>, is relative to the next instruction, i.e. (PC+4).<br/>
+For example:<br/>
+(image link)</p>
+<h3 id="3-resources">3. Resources<a class="headerlink" href="#3-resources" title="Permanent link">¶</a></h3>
+<h4 id="31-files-provided">3.1 Files provided<a class="headerlink" href="#31-files-provided" title="Permanent link">¶</a></h4>
+<p>Please download the following files from WebCourses:<br/>
+<strong>spimcore.c</strong><br/>
+<strong>spimcore.h</strong><br/>
+<strong>project.c</strong></p>
+<p>These files contain the main program and the other supporting functions of the simulator. You are required to fill in the functions in project.c You may also introduce new functions, but do not modify any other part of the files. <strong>You are not allowed to modify spimcore.c and spimcore.h. All your work should be placed in project.c.</strong> Please also avoid input and output statements as these will interrupt the test cases.</p>
+<p>The details are described in Section 4 below.</p>
+<h3 id="4-the-functions-to-be-filled-in">4. The functions to be filled in<a class="headerlink" href="#4-the-functions-to-be-filled-in" title="Permanent link">¶</a></h3>
+<p>The project is divided into 2 parts. In the first part, you are required to fill in a function (ALU(…)) in project.c that simulates the operations of an ALU.</p>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=oETOwVBzu1s">Progressive Learning Platform: Instruction Breakdown/Datapath Tutorial</a></li>
+<li>ALU(…)<ol>
+<li>Implement the operations on input parameters <em>A</em> and <em>B</em> according to <em>ALUControl</em>.</li>
+<li>Output the result (<em>Z</em>) to <em>ALUresult</em>.</li>
+<li>Assign <em>Zero</em> to 1 if the result is zero; otherwise, assign 0.</li>
+<li>The following table shows the operations of the ALU.</li>
+</ol>
+</li>
 </ul>
-<p>Someone put <a href="https://youtube.com/playlist?list=PLbs1R3bdTl56-wU-FxlI1WWtKofDiNevV">this playlist</a> together for CDA 3103C.</p>
-<h3 id="module-1-binary-conversions-addition-and-subtraction">Module 1: Binary Conversions, Addition, and Subtraction<a class="headerlink" href="#module-1-binary-conversions-addition-and-subtraction" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>ALU Control</th>
+<th style="text-align: center;">Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>000</td>
+<td style="text-align: center;">Z = A + B</td>
+</tr>
+<tr>
+<td>001</td>
+<td style="text-align: center;">Z = A - B</td>
+</tr>
+<tr>
+<td>010</td>
+<td style="text-align: center;">if A &lt; B, Z = 1; otherwise, Z = 0</td>
+</tr>
+<tr>
+<td>011</td>
+<td style="text-align: center;">if A &lt; B, Z = 1; otherwise, Z = 0 (A and B are unsigned integers)</td>
+</tr>
+<tr>
+<td>100</td>
+<td style="text-align: center;">Z = A AND B</td>
+</tr>
+<tr>
+<td>101</td>
+<td style="text-align: center;">Z = A OR B</td>
+</tr>
+<tr>
+<td>110</td>
+<td style="text-align: center;">Z = Shift B left by 16 bits</td>
+</tr>
+<tr>
+<td>111</td>
+<td style="text-align: center;">Z = NOT A</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Note: Logical operations in the ALU are bitwise operations.</p>
+</blockquote>
+<p>In the second part, you are required to fill in 9 functions in project.c. Each function simulates the operations of a section of the datapath. Appendix A, Figure 2 below shows the datapath and the sections of the datapath you need to simulate color-coded to each of the 9 functions.</p>
+<p>In spimcore.c, the function Step() is the core function of the simulator. This function invokes the 9 functions that you are required to implement to simulate the signals and data passing between the components of the datapath. <strong><em>Read Step() thoroughly in order to understand the signals and data passing, in order to implement the 9 functions.</em></strong></p>
+<p>The following shows the specifications of the 9 functions:</p>
 <ul>
-<li><a href="https://calculator.now/twos-complement-calculator/">2’s Complement Online Calculator Tool by Henrick Yau</a></li>
+<li>instruction_fetch(…)<ol>
+<li>Fetch the instruction addressed by <em>PC</em> from <em>Mem</em> and write it to <em>instruction</em>.</li>
+<li>Return 1 if a halt condition occurs; otherwise, return 0.</li>
+</ol>
+</li>
+<li>instruction_partition(…)<ol>
+<li>Partition <em>instruction</em> into several parts (<em>op, r1, r2, r3, funct, offset, jsec</em>).</li>
+<li>Read line 41 to 47 of spimcore.c for more information</li>
+</ol>
+</li>
+<li>instruction_decode(…)<ol>
+<li>Decode the instruction using the opcode(<em>op</em>).</li>
+<li>Assign the values of the control signals to the variables in the structure <em>controls</em> (See spimcore.h file):</li>
+</ol>
+</li>
 </ul>
-<h3 id="module-2-combinational-logic">Module 2: Combinational Logic<a class="headerlink" href="#module-2-combinational-logic" title="Permanent link">¶</a></h3>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>Set to 1 if the opcode is…</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>RegDst</code></td>
+<td><em>R-Format</em> or <em>I-Format</em></td>
+</tr>
+<tr>
+<td><code>ALUSrc</code></td>
+<td><code>lw</code>,<code>sw</code>, or <em>I-Format</em></td>
+</tr>
+<tr>
+<td><code>MemToReg</code></td>
+<td><code>lw</code></td>
+</tr>
+<tr>
+<td><code>RegWrite</code></td>
+<td><em>R-Format</em> OR <code>lw</code></td>
+</tr>
+<tr>
+<td><code>MemRead</code></td>
+<td><code>lw</code></td>
+</tr>
+<tr>
+<td><code>MemWrite</code></td>
+<td><code>sw</code></td>
+</tr>
+<tr>
+<td><code>Branch</code></td>
+<td><code>beq</code></td>
+</tr>
+<tr>
+<td><code>Jump</code></td>
+<td><code>j</code> OR <code>jal</code></td>
+</tr>
+</tbody>
+</table>
+<p>The following table shows the meaning of the values of ALUOp.</p>
+<table>
+<thead>
+<tr>
+<th>Value (Binary)</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>000</td>
+<td>ALU will do addition or “don’t care”</td>
+</tr>
+<tr>
+<td>001</td>
+<td>ALU will do subtraction</td>
+</tr>
+<tr>
+<td>010</td>
+<td>ALU will do “set less than” operation</td>
+</tr>
+<tr>
+<td>011</td>
+<td>ALU will do “set less than unsigned” operation</td>
+</tr>
+<tr>
+<td>100</td>
+<td>ALU will do “AND” operation</td>
+</tr>
+<tr>
+<td>101</td>
+<td>ALU will do “OR” operation</td>
+</tr>
+<tr>
+<td>110</td>
+<td>ALU will shift left <em>extended_value</em> by 16 bits</td>
+</tr>
+<tr>
+<td>111</td>
+<td>The instruction is an R-type instruction</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code>3. Return 1 if a halt condition occurs; otherwise, return 0.
+</code></pre></div>
 <ul>
-<li><a href="https://youtu.be/RO5alU6PpSU">The Organic Chemistry Tutor: Karnaugh Maps (YouTube)</a></li>
-<li><a href="https://www.youtube.com/watch?v=aQlF-9i3fAA">ALL ABOUT ELECTRONICS: Multiplexer Explained (YouTube)</a></li>
-<li><a href="https://youtu.be/GRjLp6GXoqQ">Techno Tutorials: 8x1 MUX using 4x1 MUX</a></li>
-<li><a href="https://youtu.be/GRjLp6GXoqQ">Computer Engineering with Collin: Multiplexers and Decoders</a></li>
-<li><a href="https://courses.cs.washington.edu/courses/cse390c/15wi/lectures/02-CombLogic.pdf">University of Washington: CSE390C Combinational Logic Slides</a></li>
-<li><a href="https://learn.circuitverse.org/docs/logic-design/kmaps.html">Circuitverse: K-Maps</a></li>
-<li><a href="https://publish.obsidian.md/cynixia/Karnaugh+Map">The Black Book by Cynixia: Karnaugh Maps</a></li>
-<li><a href="https://nandgame.com/">Logic Gates: NAND Game</a></li>
+<li>read_register(…)<ol>
+<li>Read the registers addressed by <em>r1</em> and <em>r2</em> from <em>Reg,</em> and write the read values to <em>data1</em> and <em>data2</em> respectively.</li>
+</ol>
+</li>
+<li>sign_extend(…)<ol>
+<li>Assign the sign-extended value of <em>offset</em> to <em>extended_value.</em></li>
+</ol>
+</li>
+<li>ALU_operations(…)<ol>
+<li>Call the ALU function described in part one with appropriate parameters:<br/>
+    i. ALU operations should be performed on <em>data1,</em> and <em>data2</em> or <em>extended_value</em> (determined by <em>ALUSrc</em>).<br/>
+    ii. The ALU operation performed is based on <em>ALUOp</em> and <em>funct.</em><br/>
+    iii. The result of the operation should be written to <em>ALUresult</em> and <em>Zero</em> should be updated as a result of calling ALU(…)</li>
+<li>Return 1 if a halt condition occurs; otherwise, return 0.</li>
+</ol>
+</li>
+<li>rw_memory(…)<ol>
+<li>Use the value of MemWrite or MemRead to determine if a memory write operation or memory read operation <strong>or neither</strong> is occuring.</li>
+<li>If reading from memory, read the content of the memory location addressed by <em>ALUresult</em> to <em>memdata.</em></li>
+<li>If writing to memory, write the value of <em>data2</em> to the memory location addressed by <em>ALUresult.</em></li>
+<li>Return 1 if a halt condition occurs; otherwise, return 0.</li>
+</ol>
+</li>
+<li>write_register(…)<ol>
+<li>Write the data (<em>ALUresult</em> or <em>memdata</em>) to a register (<em>Reg</em>) addressed by <em>r2</em> or <em>r3.</em></li>
+</ol>
+</li>
+<li>PC_update(…)<ol>
+<li>Update the program counter (<em>PC</em>).</li>
+</ol>
+</li>
 </ul>
-<h3 id="module-3-sequential-logic-design">Module 3: Sequential Logic Design<a class="headerlink" href="#module-3-sequential-logic-design" title="Permanent link">¶</a></h3>
-<h3 id="module-4-computer-arithmetic">Module 4: Computer Arithmetic<a class="headerlink" href="#module-4-computer-arithmetic" title="Permanent link">¶</a></h3>
-<ul>
-<li><a href="https://dhruvpatel004.github.io/Booth-Multiplication-Algorithm/#ans">Booth’s Algorithm: Multiplication Online Calculator Tool by dhruvpatel004</a></li>
-<li><a href="https://numeral-systems.com/ieee-754-converter/">IEEE 754 Converter with explanations</a></li>
-</ul>
-<h3 id="module-5-mips-assembly">Module 5: MIPS Assembly<a class="headerlink" href="#module-5-mips-assembly" title="Permanent link">¶</a></h3>
-<ul>
-<li><a href="https://swim-ucf.github.io/SWIM/">SWIM - Simple Web Interface for eMulation (MIPS) by UCF</a></li>
-<li><a href="https://github.com/1whatleytay/saturn">Saturn - A modern MIPS interpreter and assembler by 1whatleytay</a></li>
-<li><a href="https://s3-eu-west-1.amazonaws.com/downloads-mips/documents/MD00565-2B-MIPS32-QRC-01.01.pdf">MIPS 32-bit ISA Assembly Reference</a></li>
-<li><a href="https://www.cs.gordon.edu/courses/cps311/handouts-2019/MIPS%20ISA.pdf">Gordon College: CPS311 MIPS ISA Handout</a></li>
-<li><a href="https://minnie.tuhs.org/CompArch/Resources/mips_quick_tutorial.html">MIPS Quick Tutorial by Warren Toomey</a></li>
-<li><a href="https://aleksa-sukovic.github.io/mips-visualiser/">MIPS Visualizer by aleksa-sukovic</a></li>
-<li><a href="https://courses.cs.vt.edu/cs2506/Fall2014/Notes/L04.MIPSAssemblyOverview.pdf">Virginia Tech: CS2506 MIPS Slides</a></li>
-</ul>
+<p>The file spimcore.h is the header file which contains the definition of a structure storing the control signals and the prototypes of the above 10 functions.</p>
+<blockquote>
+<p><strong>NOTE: You should avoid input and output operations in project.c. These operations are handled by spimcore.</strong></p>
+</blockquote>
+<h3 id="5-operation-of-the-simulator">5. Operation of the Simulator<a class="headerlink" href="#5-operation-of-the-simulator" title="Permanent link">¶</a></h3>
+<p>The files spimcore.c and project.c should be compiled together. Here is an example of how that may be done in an UNIX environment. First compile:</p>
+<p>$ gcc -o spimcore spimcore.c project.c</p>
+<p>After compilation, to begin the simulation, you can type the following command in UNIX (replace \&lt;filename&gt; with the correct name of the input file on your system):</p>
+<p>$ ./spimcore \&lt;filename&gt;.asc</p>
+<p>The command prompt</p>
+<p>cmd:</p>
+<p>should appear. The simulation works with the following commands (both lowercase and uppercase letter are accepted):</p>
+<table>
+<thead>
+<tr>
+<th>r</th>
+<th>“Register” - Display register contents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>m</td>
+<td>“Memory” - Display memory contents</td>
+</tr>
+<tr>
+<td>s</td>
+<td>“Step” - Attempt to run the instruction located at the current PC</td>
+</tr>
+<tr>
+<td>c</td>
+<td>“Continue” - Attempts to run <strong>all</strong> instructions, beginning with PC</td>
+</tr>
+<tr>
+<td>h</td>
+<td>“Halt” - Check to see if the simulation has halted</td>
+</tr>
+<tr>
+<td>p</td>
+<td>“Print” - Prints a copy of the input file</td>
+</tr>
+<tr>
+<td>g</td>
+<td>“Controls” - Display the most recent control signals</td>
+</tr>
+<tr>
+<td>x</td>
+<td>“Quit” - Terminate the simulation</td>
+</tr>
+</tbody>
+</table>
+<h3 id="6-submission-guidelines">6. Submission Guidelines<a class="headerlink" href="#6-submission-guidelines" title="Permanent link">¶</a></h3>
+<p><strong>Make sure that your program can be compiled using the commands in section 5. Programs that do not compile will be penalized a minimum of 20 points.</strong></p>
+<p>Submit project.c online through WebCourses.</p>
+<p><strong>You are only required to submit project.c. No additional report to summarize your work is required. Therefore, you should provide any explanations via comments in your project.c file for potential partial credit.</strong></p>
+<p><strong>Appendix A</strong></p>
+<p><strong>Figure 1: Instructions to be implemented in this project.</strong></p>
+<p>(image)</p>
+<p><strong>Figure 2: The single-cycle datapath to be implemented</strong></p>
+<p>(image)</p>
 <hr/>
 <div class="md-source-file">
 <small>
 <!-- mkdocs-git-revision-date-localized-plugin -->
 <u>Last update</u> :
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 1, 2026 15:28:06 UTC">May 1, 2026</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 17, 2026 21:06:51 UTC">September 17, 2026</span>
 <!-- mkdocs-git-revision-date-plugin -->
 <br/>
 <u>Created</u> :
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 1, 2026 15:28:06 UTC">May 1, 2026</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 17, 2026 21:06:51 UTC">September 17, 2026</span>
 </small>
 </div>
 <!-- Was this page helpful? -->
@@ -669,7 +1098,7 @@
     try {
       const index = document.querySelector('h1').innerHTML;
       if (index === "Index") {
-        document.querySelector('h1').innerHTML = "CDA 3103C Resources";
+        document.querySelector('h1').innerHTML = "Project Guideline";
       }
     } catch (error) {
       // console.log(error);

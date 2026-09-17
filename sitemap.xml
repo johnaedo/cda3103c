@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
+         <loc>https://johnaedo.github.io/cda3103c/Drafts/Project%20Guideline/</loc>
+         <lastmod>2026-09-17</lastmod>
+    </url>
+    <url>
          <loc>https://johnaedo.github.io/cda3103c/Examples/Switch%20statement%20in%20assembly%20using%20Jump%20Table/</loc>
          <lastmod>2026-09-17</lastmod>
     </url>
